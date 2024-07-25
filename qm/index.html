@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Question Management</h1>
+  <form id="questionForm">
+    <label for="id">ID:</label>
+    <input type="text" id="id" name="id" required>
+    
+    <label for="question">Question:</label>
+    <input type="text" id="question" name="question" required>
+    
+    <label for="type">Type:</label>
+    <select id="type" name="type" required>
+      <option value="">Select Type</option>
+      <option value="mcc">Multiple Choice</option>
+      <option value="tf">True/False</option>
+    </select>
+    
+    <!-- Multiple Choice Options Container -->
+    <div id="mccOptionsContainer" style="display: none;">
+      <label for="options">Options:</label>
+      <input type="text" class="option" placeholder="Option 1">
+      <input type="text" class="option" placeholder="Option 2">
+      <input type="text" class="option" placeholder="Option 3">
+      <input type="text" class="option" placeholder="Option 4">
+    </div>
+
+    <!-- True/False Options Container -->
+    <div id="tfOptionsContainer" style="display: none;">
+      <label for="options">Options:</label>
+      <input type="text" class="option" placeholder="True">
+      <input type="text" class="option" placeholder="False">
+    </div>
+    
+    <label for="correctOption">Correct Option:</label>
+    <input type="text" id="correctOption" name="correctOption" required>
+    
+    <button type="submit">Add Question</button>
+  </form>
+  
+  <table id="questionsTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Question</th>
+        <th>Type</th>
+        <th>Options</th>
+        <th>Correct Option</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Questions will be dynamically added here -->
+    </tbody>
+  </table>
+
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Edit Question</h2>
+      <form id="editQuestionForm">
+        <label for="editId">ID:</label>
+        <input type="text" id="editId" name="id" required readonly>
+        
+        <label for="editQuestion">Question:</label>
+        <input type="text" id="editQuestion" name="question" required>
+        
+        <label for="editType">Type:</label>
+        <select id="editType" name="type" required>
+          <option value="mcc">Multiple Choice</option>
+          <option value="tf">True/False</option>
+        </select>
+        
+        <div id="editMccOptionsContainer" style="display: none;">
+          <label for="editOptions">Options:</label>
+          <input type="text" class="editOption" placeholder="Option 1">
+          <input type="text" class="editOption" placeholder="Option 2">
+          <input type="text" class="editOption" placeholder="Option 3">
+          <input type="text" class="editOption" placeholder="Option 4">
+        </div>
+        
+        <div id="editTfOptionsContainer" style="display: none;">
+          <label for="editOptions">Options:</label>
+          <input type="text" class="editOption" placeholder="True/False">
+          <input type="text" class="editOption" placeholder="True/False">
+        </div>
+        
+        <label for="editCorrectOption">Correct Option:</label>
+        <input type="text" id="editCorrectOption" name="correctOption" required>
+        
+        <button type="submit">Update Question</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

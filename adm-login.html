@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="adm-login.css">
+</head>
+
+<a href="home.html" target="_self">
+  <img src="../views/logo.png" alt="Home page" class = "logo">
+  </a>
+
+  
+<body>
+
+  <form id="loginForm" onsubmit="return login()">
+    <div class="login-container">
+      <h1 align = "center"><b>ADMIN LOGIN</b></h1>
+
+          <div class = "input-box" align = "center">
+              <input type="text" id="username" placeholder="Username" required>
+              <i class='bx bxs-user'></i>
+              <br />
+          </div>
+          
+          <div class = "input-box2" align = "center">
+              <input type="password" id="password" placeholder="Password" required>
+              <box-icon name='lock-alt' type='solid' ></box-icon>
+              <br />
+          </div>
+          <br \>
+          
+          <div class="remember-forgot" align = "center">
+              <label><input type="checkbox"> Remember me</label>
+              <a href="#">Forgot password?</a>
+          </div>
+          <br \>
+          <div align="center">
+    <button type="submit" class="btn" >Login</button>
+  </div>
+
+    </div>
+
+            
+                
+               
+            
+           
+                
+                
+            
+            
+
+
+  </form>
+  <script src="adm-login.js"></script>
+</body>
+</html>

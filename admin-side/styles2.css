@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background: url("../views/backg9.jpg");
+    background-size: cover;
+}
+header h1 {
+    align-items: left ;
+    font-size: 36px;
+    text-align: left;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+}
+
+
+.login-container .btn{
+    width: 80%;
+    height: 45px;
+    background:#fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px  rgba(0 , 0 , 0 , .1);
+    cursor: pointer; 
+    font-size: 16px;
+    color : #333;
+    font-weight: 600;
+}
+
+.login-container .btn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.logo {
+    position: absolute;
+    width: 80px;
+    height: auto;
+    left: 0px;
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.logo:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* General button styling */
+button {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Specific styles for different buttons */
+button.Student {
+    background-color: #ffffff; /* Green */
+    color: rgb(0, 0, 0);
+}
+
+button.Admin {
+    background-color: #ffffff; /* Blue */
+    color: rgb(0, 0, 0);
+}
+
+button.Test {
+    background-color: #ffffff; /* Red */
+    color: rgb(0, 0, 0);
+}
+
+/* Hover effects */
+button:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+/* Active button effects */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Additional styling for positioning and layout */
+.button1, .button2 .button3 , .button4  {
+    
+    width: 40%;
+    text-align: center;
+}
