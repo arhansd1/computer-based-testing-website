@@ -43,12 +43,10 @@ When you are initially working on your website, it is very useful to be able to 
    On most Linux distributions and Windows Subsystem for Linux, the command is:
    ```sh
    sudo apt install nodejs
-
-
-brew install node
-cd yourrepository
-npm install
-node server.js
+   brew install node
+   cd yourrepository
+   npm install
+   node server.js
 
 
 Open your browser and navigate to:  http://localhost:3000
