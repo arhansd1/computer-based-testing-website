@@ -51,7 +51,8 @@ When you are initially working on your website, it is very useful to be able to 
 
 Open your browser and navigate to:  http://localhost:3000
 
-This will allow you to view and test your website locally.
+This will allow you to view and test the website locally.
+
 
 
 
