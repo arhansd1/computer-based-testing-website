@@ -1,4 +1,4 @@
-# MDDTI Southern Railways, Bangalore - Computer Based Testing Website
+#  Computer Based Testing Website - for MDDTI Bangalore
 
 ## Description
 This project is a comprehensive website for managing computer-based tests for MDDTI Southern Railways, Bangalore. It includes various sections for students and administrators to manage tests and related data.
