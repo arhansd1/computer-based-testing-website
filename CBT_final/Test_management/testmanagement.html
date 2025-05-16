@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Questions - Admin</title>
+    <link rel="stylesheet" href="testmg.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Select Questions for the Test</h1>
+        <div class="search-container">
+            <input type="number" id="search-input" placeholder="Enter Question ID">
+            <button id="search-btn">Search</button>
+        </div>
+        <div class="tables-container">
+            <div class="table">
+                <h2>Available Questions</h2>
+                <div id="questions-list" class="scrollable">
+                    <!-- Questions will be dynamically inserted here -->
+                </div>
+                <div class="buttons-container">
+                    <button id="shift-right-btn">Shift Right &gt;&gt;</button>
+                </div>
+            </div>
+            <div class="table">
+                <h2>Selected Questions</h2>
+                <div id="selected-questions-list" class="scrollable">
+                    <!-- Selected questions will be dynamically inserted here -->
+                </div>
+                <button id="shift-left-btn">&lt;&lt; Shift Left</button>
+            </div>
+        </div>
+        <button id="start-test-btn">Download Questions File</button>
+    </div>
+    <script src="testman.js"></script>
+</body>
+</html>
