@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url('../common-styles.css');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url("../views/backg9.jpg");
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    color: var(--text-dark);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-lg);
+    max-width: 500px;
+    width: 90%;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    margin-bottom: var(--spacing-lg);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: var(--border-radius-md);
+    border: 1px solid var(--gray-300);
+    background-color: var(--gray-100);
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(58, 110, 165, 0.25);
+    outline: none;
+}
+
+.logo {
+    position: absolute;
+    width: 80px;
+    height: auto;
+    left: var(--spacing-md);
+    top: var(--spacing-md);
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-md);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: var(--spacing-md) var(--spacing-lg);
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 100px;
+    font-size: 1.8rem;
+    color: var(--text-light);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+    background: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: var(--spacing-md);
+}
+    
+.btn:hover {
+    background: var(--primary-dark);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}

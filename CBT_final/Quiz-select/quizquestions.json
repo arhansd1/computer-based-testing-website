@@ -1,0 +1,170 @@
+{"questions": 
+[
+    {
+        "id": 1,
+        "question": "What is the capital of Australia?",
+        "options": [
+            "Sydney",
+            "Melbourne",
+            "Canberra",
+            "Brisbane"
+        ],
+        "answer": "Canberra"
+    },
+    {
+        "id": 2,
+        "question": "What are the three state railways that merged to form the Southern Railway on April 14, 1951? ",
+        "options": [
+            "the Madras and Southern Mahratta Railway, the South Indian Railway, and the Mysore State Railway",
+            "Bombay Baroda Railway, Bengal Nagpur Railway, and Konkan Railway",
+            "Central India Railway, North Western Railway, and Baroda State Railway",
+            "East Indian Railway, Oudh and Rohilkhand Railway, and Assam Bengal Railway"
+        ],
+        "answer": "the Madras and Southern Mahratta Railway, the South Indian Railway, and the Mysore State Railway"
+    },
+    {
+        "id": 3,
+        "question": "Who wrote 'To Kill a Mockingbird'?",
+        "options": [
+            "Harper Lee",
+            "Mark Twain",
+            "Ernest Hemingway",
+            "F. Scott Fitzgerald"
+        ],
+        "answer": "Harper Lee"
+    },
+    {
+        "id": 4,
+        "question": "Which element has the chemical symbol 'O'?",
+        "options": [
+            "Oxygen",
+            "Gold",
+            "Silver",
+            "Osmium"
+        ],
+        "answer": "Oxygen"
+    },
+    {
+        "id": 5,
+        "question": "What is the hardest natural substance on Earth?",
+        "options": [
+            "Gold",
+            "Diamond",
+            "Iron",
+            "Platinum"
+        ],
+        "answer": "Diamond"
+    },
+    {
+        "id": 6,
+        "question": "What is the smallest country in the world?",
+        "options": [
+            "Monaco",
+            "San Marino",
+            "Vatican City",
+            "Liechtenstein"
+        ],
+        "answer": "Vatican City"
+    },
+    {
+        "id": 7,
+        "question": "What is the chemical formula for water?",
+        "options": [
+            "H2O",
+            "CO2",
+            "NaCl",
+            "CH4"
+        ],
+        "answer": "H2O"
+    },
+    {
+        "id": 8,
+        "question": "Which planet is closest to the Sun?",
+        "options": [
+            "Venus",
+            "Earth",
+            "Mercury",
+            "Mars"
+        ],
+        "answer": "Mercury"
+    },
+    {
+        "id": 9,
+        "question": "Who painted the Mona Lisa?",
+        "options": [
+            "Vincent van Gogh",
+            "Leonardo da Vinci",
+            "Pablo Picasso",
+            "Claude Monet"
+        ],
+        "answer": "Leonardo da Vinci"
+    },
+    {
+        "id": 10,
+        "question": "What is the capital of Japan?",
+        "options": [
+            "Seoul",
+            "Tokyo",
+            "Beijing",
+            "Osaka"
+        ],
+        "answer": "Tokyo"
+    },
+    {
+        "id": 11,
+        "question": "How many continents are there on Earth?",
+        "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "answer": "7"
+    },
+    {
+        "id": 12,
+        "question": "What is the largest ocean on Earth?",
+        "options": [
+            "Atlantic Ocean",
+            "Indian Ocean",
+            "Arctic Ocean",
+            "Pacific Ocean"
+        ],
+        "answer": "Pacific Ocean"
+    },
+    {
+        "id": 13,
+        "question": "Which organ in the human body is responsible for pumping blood?",
+        "options": [
+            "Liver",
+            "Lung",
+            "Heart",
+            "Kidney"
+        ],
+        "answer": "Heart"
+    },
+    {
+        "id": 14,
+        "question": "What is the main ingredient in guacamole?",
+        "options": [
+            "Tomato",
+            "Avocado",
+            "Pepper",
+            "Onion"
+        ],
+        "answer": "Avocado"
+    },
+    {
+        "id": 15,
+        "question": "Which gas do plants use for photosynthesis?",
+        "options": [
+            "Oxygen",
+            "Carbon Dioxide",
+            "Nitrogen",
+            "Hydrogen"
+        ],
+        "answer": "Carbon Dioxide"
+    }
+]
+
+}
