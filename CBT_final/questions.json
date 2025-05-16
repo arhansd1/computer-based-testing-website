@@ -1,0 +1,24 @@
+[
+  {
+    "id": "21",
+    "question": "how are you",
+    "type": "tf",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correctOption": "true"
+  },
+  {
+    "id": "12",
+    "question": "really",
+    "type": "mcc",
+    "options": [
+      "yes",
+      "no",
+      "not sure",
+      "ill kms"
+    ],
+    "correctOption": "no"
+  }
+]
