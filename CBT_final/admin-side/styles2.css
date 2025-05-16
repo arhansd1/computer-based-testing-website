@@ -1,0 +1,182 @@
+@import url('../common-styles.css');
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: var(--spacing-md) var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    box-shadow: var(--shadow-md);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-left: 100px;
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+.admin-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+    padding: var(--spacing-xl);
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 80px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.login-container .btn {
+    width: 80%;
+    height: 50px;
+    background: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: var(--spacing-md);
+}
+
+.login-container .btn:hover {
+    background: var(--primary-dark);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-3px);
+}
+
+.login-container .btn:active {
+    transform: translateY(1px);
+}
+
+.logo {
+    position: absolute;
+    width: 60px;
+    height: auto;
+    left: var(--spacing-md);
+    top: var(--spacing-sm);
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-md);
+}
+
+/* General button styling */
+button {
+    font-size: 1rem;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    margin: var(--spacing-sm);
+    border: none;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+/* Specific styles for different buttons */
+button.Student {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+button.Admin {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+}
+
+button.Test {
+    background-color: var(--success-color);
+    color: var(--text-light);
+}
+
+/* Hover effects */
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Active button effects */
+button:active {
+    transform: translateY(1px);
+}
+
+/* Additional styling for positioning and layout */
+.button1, .button2, .button3, .button4 {
+    width: 200px;
+    text-align: center;
+    margin: var(--spacing-md);
+}
+
+/* Card layout for buttons */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.card-button {
+    background-color: var(--text-light);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-lg);
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 200px;
+}
+
+.card-button:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card-button button {
+    width: 100%;
+    margin-top: var(--spacing-md);
+}
+
+.card-button h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .admin-container {
+        padding: var(--spacing-md);
+        width: 95%;
+    }
+    
+    .button1, .button2, .button3, .button4 {
+        width: 100%;
+    }
+    
+    .card-button {
+        width: 100%;
+    }
+}
