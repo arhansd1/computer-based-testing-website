@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="sm_styles.css">
+</head>
+<body>
+  <header>
+    <a href="home.html" target="_self">
+    <img src="../views/logo.png" alt="Logo" class="logo">
+    </a>
+    <h1 >MDDTI TRAINING INSTITUTE BENGALURU </h1>
+  </header>
+  <br> <br> <br> <br>
+  <div class="container">
+    <h1>Student Management System</h1>
+    <button onclick="showAddForm()">Add Student</button>
+    <div>
+      <label for="search-id">Search by ID:</label>
+      <input type="text" id="search-id">
+      <button onclick="searchStudentById()">Search</button>
+    </div>
+    <div>
+      <label for="filter-branch">Filter by Branch:</label>
+      <input type="text" id="filter-branch">
+      <button onclick="filterStudentsByBranch()">Filter</button>
+    </div>
+    <table id="students-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Branch</th>
+          <th>Password</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="students-list"></tbody>
+    </table>
+    <div id="student-form" style="display: none;">
+      <h2 id="form-title">Add Student</h2>
+      <form id="studentForm">
+        <input type="hidden" id="studentId" name="id">
+        <label for="ID">ID:</label><br>
+        <input type="text" id="ID" name="ID"><br>
+        <label for="Name">Name:</label><br>
+        <input type="text" id="Name" name="Name"><br>
+        <label for="branch">Branch:</label><br>
+        <input type="text" id="branch" name="branch"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <button type="submit">Submit</button>
+        <button type="button" onclick="hideForm()">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="sm_scripts.js"></script>
+</body>
+</html>
