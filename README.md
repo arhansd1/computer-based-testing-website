@@ -45,6 +45,7 @@ When you are initially working on your website, it is very useful to be able to 
    sudo apt install nodejs
    brew install node
    cd yourrepository
+   cd CBT_final
    npm install
    node server.js
 

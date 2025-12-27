@@ -16,7 +16,7 @@ const users = [
   
     if (user) {
       // Redirect to the new webpage
-      window.location.href = 'quizselect/QUIZ.html';
+      window.location.href = 'Quiz-select/QUIZ.html';
       return false;
     } else {
       alert('Invalid username or password. Please try again.');

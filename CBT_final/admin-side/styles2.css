@@ -1,10 +1,25 @@
 @import url('../common-styles.css');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #4a6cf7;
+    --primary-dark: #3a5bd9;
+    --text-light: #ffffff;
+    --text-dark: #1e293b;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+}
+
 body {
-    display: flex;
-    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
     min-height: 100vh;
-    align-items: center;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: var(--text-light);
+    line-height: 1.6;
+    padding-top: 80px;
 }
 
 header {
@@ -12,25 +27,29 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--primary-color);
-    padding: var(--spacing-md) var(--spacing-lg);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
     display: flex;
+    justify-content: center;
     align-items: center;
     z-index: 100;
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 header h1 {
     font-size: 1.8rem;
     margin-left: 100px;
-    color: var(--text-light);
+    color: var(--light-color);
     font-weight: 600;
 }
 
 .admin-container {
     background-color: rgba(255, 255, 255, 0.95);
-    border-radius: var(--border-radius-lg);
-    box-shadow: var(--shadow-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
     padding: var(--spacing-xl);
     width: 90%;
     max-width: 1000px;
@@ -47,21 +66,21 @@ header h1 {
     width: 80%;
     height: 50px;
     background: var(--primary-color);
-    color: var(--text-light);
+    color: var(--light-color);
     border: none;
     outline: none;
-    border-radius: var(--border-radius-xl);
-    box-shadow: var(--shadow-md);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
-    transition: all 0.3s ease;
+    transition: var(--transition);
     margin-top: var(--spacing-md);
 }
 
 .login-container .btn:hover {
     background: var(--primary-dark);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--box-shadow);
     transform: translateY(-3px);
 }
 
@@ -80,7 +99,7 @@ header h1 {
 
 .logo:hover {
     transform: scale(1.1);
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--box-shadow);
 }
 
 /* General button styling */
@@ -89,18 +108,165 @@ button {
     padding: var(--spacing-sm) var(--spacing-lg);
     margin: var(--spacing-sm);
     border: none;
-    border-radius: var(--border-radius-md);
+    border-radius: var(--border-radius);
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: var(--transition);
     font-weight: 500;
     background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+/* Dashboard Grid Layout */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    perspective: 1000px;
+}
+
+/* Card Styles */
+.dashboard-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+.dashboard-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: translateX(-100%);
+    transition: 0.6s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-10px) scale(1.02) rotateX(5deg) rotateY(5deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.dashboard-card:hover::before {
+    transform: translateX(100%);
+}
+
+/* Card Icon Styles */
+.card-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-icon i {
+    transition: var(--transition);
+}
+
+.card-icon.admin { 
+    background: #6f42c1; 
+}
+
+.card-icon.test { 
+    background: #17a2b8; 
+}
+
+.card-icon.question { 
+    background: #20c997; 
+}
+
+.dashboard-card:hover .card-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.dashboard-card:hover .card-icon i {
+    transform: scale(1.1);
+}
+
+/* Card Content */
+.dashboard-card h3 {
     color: var(--text-light);
+    margin-bottom: 0.75rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Badge */
+.card-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+    color: white;
+    padding: 0.3rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: float 3s ease-in-out infinite;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .dashboard-card {
+        padding: 1.5rem;
+    }
+    
+    header h1 {
+        font-size: 1.25rem;
+    }
 }
 
 /* Specific styles for different buttons */
 button.Student {
     background-color: var(--primary-color);
-    color: var(--text-light);
+    color: var(--light-color);
 }
 
 button.Admin {
@@ -109,7 +275,7 @@ button.Admin {
 }
 
 button.Test {
-    background-color: var(--success-color);
+    background-color: var(--primary-dark);
     color: var(--text-light);
 }
 

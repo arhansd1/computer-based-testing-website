@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin side</title>
+    <title>Admin Dashboard | MDDTI</title>
     <link rel="stylesheet" href="styles2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
@@ -13,18 +14,37 @@
         </a>
         <h1 >MDDTI TRAINING INSTITUTE BENGALURU </h1>
     </header>
-    <main>
-        <div class="button1">
-            <button type="button" class="Student" onclick="location.href='../sm/sm_index.html'">Student Management</button>
+    <main class="dashboard-grid">
+        <div class="dashboard-card" onclick="location.href='/student_management/sm_index.html'">
+            <div class="card-icon">
+                <i class='bx bxs-user-detail'></i>
+            </div>
+            <h3>Student Management</h3>
+            <p>Manage student records and information</p>
         </div>
-        <div class="button2">
-           <button type="button" class="Admin" onclick="location.href='../am/index.html'">Admin Management</button>
-        </div> 
-        <div class="button3">
-            <button type="button" class="Test" onclick="location.href='../tm/testmanagement.html'">Test Management</button>
+
+        <div class="dashboard-card" onclick="location.href='/admin_management/index.html'">
+            <div class="card-icon admin">
+                <i class='bx bxs-shield-alt-2'></i>
+            </div>
+            <h3>Admin Management</h3>
+            <p>Manage admin accounts and permissions</p>
         </div>
-        <div class="button4">
-            <button type="button" class="Question" onclick="location.href='../qm/index.html'">Question Management</button>
+
+        <div class="dashboard-card" onclick="location.href='/Test_management/testmanagement.html'">
+            <div class="card-icon test">
+                <i class='bx bxs-file'></i>
+            </div>
+            <h3>Test Management</h3>
+            <p>Create and manage tests</p>
+        </div>
+
+        <div class="dashboard-card" onclick="location.href='/Question_Management/index.html'">
+            <div class="card-icon question">
+                <i class='bx bxs-question-mark'></i>
+            </div>
+            <h3>Question Bank</h3>
+            <p>Manage test questions and answers</p>
         </div>
     </main>
 
